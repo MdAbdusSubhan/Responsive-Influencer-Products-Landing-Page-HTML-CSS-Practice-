@@ -109,12 +109,125 @@ main section{
     border-block: 1px solid rgba(128, 128, 128, 0.384);
 }
 
+/* collections section styles */
+
+.collections-title{
+    text-align: center;
+    color: #3A3A3A;
+    margin-bottom: 30px;
+}
+
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.items{
+    padding: 17px;
+}
+
+.item img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+.item h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(24, 25, 31, 1);
+    margin-bottom: 6px;
+}
+.item h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.item p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(94, 99, 102, 1);
+    margin-top: 5px;
+}
+
+.fa-star{
+    color: orange;
+}
+
+.btn{
+    margin-top: 30px;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.btn button{
+    color: #E02C6D;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* feature section styles */
+.feature{
+    display: flex;
+    gap: 90px;
+    align-items: center;
+}
+.feature img{
+    width: 100%;
+}
+
+.feature-content h2{
+    font-size: 2.2rem;
+    color: #0A0826;
+    margin-bottom: 16px;
+}
+
+.feature-content p{
+    font-weight: bold;
+    color: #6C6C6C;
+    margin-bottom: 20px;
+}
+
+/* footer styles */
+
+footer{
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    padding-block: 40px;
+}
+
+.footer-content{
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+.footer-content h2{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-content p{
+    font-size: 0.8rem;
+    margin-top: 0;
+}
+
 
 
 /* responsive styles */
 
 /* for mobile */
 @media screen and (max-width: 576px) {
+
+    main section{
+        margin: 20px auto;
+    }
 
     /* navbar related styles */
     .navbar-mobile{
@@ -164,6 +277,19 @@ main section{
         border: none;
         margin-top: 20px;
     }
+
+    /* collections */
+
+    .collection-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* feature */
+    .feature{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
 }
 
 /* for medium devices */
@@ -174,6 +300,12 @@ main section{
         gap: 20px;
         border: none;
         margin-top: 20px;
+    }
+
+    /* collections */
+
+    .collection-container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
