@@ -123,8 +123,10 @@ main section{
     gap: 30px;
 }
 
-.items{
-    padding: 17px;
+.item{
+    padding: 20px;
+    box-shadow: 0 0 40px 0 #0000003d;
+    border-radius: 8px;
 }
 
 .item img{
