@@ -24,6 +24,10 @@
 }
 
 
+main section{
+    max-width: 1200px;
+    margin: 50px auto;
+}
 
 /* navebar related styles */
 .navbar{
@@ -94,12 +98,23 @@
     width: 100%;
 }
 
+/* sponsors section styles */
+.sponsors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    padding: 40px 0;
+    border-block: 1px solid rgba(128, 128, 128, 0.384);
+}
+
 
 
 /* responsive styles */
 
 /* for mobile */
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 576px) {
 
     /* navbar related styles */
     .navbar-mobile{
@@ -142,4 +157,24 @@
         text-align: center;
         gap: 20px;
     }
+
+    /* sponsor styles */
+    .sponsors{
+        gap: 20px;
+        border: none;
+        margin-top: 20px;
+    }
 }
+
+/* for medium devices */
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+     /* sponsor styles */
+    .sponsors{
+        gap: 20px;
+        border: none;
+        margin-top: 20px;
+    }
+}
+
+
